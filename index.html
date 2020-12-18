@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="img/apple_talk.png">
+    <title>Apple_Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fas fa-wifi"></i>
+            <!-- Wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>98%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+            <!-- bettry Icon -->
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Wecome to AppleTalk</h1>
+
+        <p class="welcome-header__text">if you have a Apple Account, <br> log in with your email or phone number.</p>
+    </header>
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" required placeholder="Email or phone number" minlength="8">
+        <input name="password" type="password" required placeholder="Password" minlength="6">
+        <input type="submit" value="Log In">
+        <a href="#">Find Apple Account or Password</a>
+    </form>
+</body>
+</html>
