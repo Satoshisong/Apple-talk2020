@@ -10,7 +10,7 @@
 }
 
 .recommended-friends span {
-  margin: 100px 0;
+  margin: 80px 0;
   display: block;
   text-align: center;
   font-size: 20px;
@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .open-post__title {
@@ -108,4 +109,24 @@
 
 .red_heart {
   color: rgb(194, 18, 18);
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: scale(1);
+  }
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+  100% {
+    color: white;
+    transform: scale(1);
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
